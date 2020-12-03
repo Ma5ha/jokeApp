@@ -1,4 +1,4 @@
-import { style } from '@angular/animations';
+
 import { Component } from "@angular/core";
 
 @Component({
@@ -9,5 +9,5 @@ import { Component } from "@angular/core";
 
 
 export class NavbarComponent{
-    links: string[] =["programming", "dark","pun", "miscellaneous" ]
+    links: string[] =["programming", "dummy" ]
 }

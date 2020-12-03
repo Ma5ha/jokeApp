@@ -8,10 +8,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 //modules 
 import { HttpClientModule } from '@angular/common/http';
+import { DummyComponent } from './pages/dummy/dymmy.component';
 
 
 // components 
-const components=[ProgrammingPage, NavbarComponent];
+const components=[ProgrammingPage, NavbarComponent, DummyComponent];
 
 
 
