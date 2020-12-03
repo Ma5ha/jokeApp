@@ -6,8 +6,15 @@ import { AppComponent } from './app.component';
 import { ProgrammingPage } from './pages/programming/Programing.page';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+//modules 
+import { HttpClientModule } from '@angular/common/http';
+
+
 // components 
 const components=[ProgrammingPage, NavbarComponent];
+
+
+
 
 
 @NgModule({
@@ -17,7 +24,9 @@ const components=[ProgrammingPage, NavbarComponent];
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

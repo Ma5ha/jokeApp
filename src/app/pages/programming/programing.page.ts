@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProgramingJokesService } from 'src/app/services/programmingJokes.service';
 // svaka komponenta ima dekorator u njemu se deklarise:
 //* selektor
 //* template ili templateUrl
@@ -25,6 +26,20 @@ templateUrl: './programing.page.html'
 
 
 // ukoliko je u pitanju stranica mora se inportovati u routeru  da bi mogla da se pozove u ruteru
-export class ProgrammingPage{
+
+
+// tslint:disable-next-line: component-class-suffix
+export class  ProgrammingPage  implements OnInit {
+
+
+
+    constructor(private apiService: ProgramingJokesService ){
+
+    }
+
+    ngOnInit(){
+        this.apiService.get()
+    }
+
 
 }
